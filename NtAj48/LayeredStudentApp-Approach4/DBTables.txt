@@ -1,0 +1,3 @@
+SQL> create table layer_student(sno number(5) primary key,
+sname varchar2(20),total number(8),
+avg number(8,2),result varchar2(10));

@@ -1,0 +1,46 @@
+<%@page language="java" isELIgnored="false" contentType="text/html;
+charset=ISO-8859-1" %>
+<script language="JavaScript">
+	function isHtml() {
+		alert("hello");
+		//set "HTML" value to hidden box
+		form.source.value = "HTML";
+		validate();
+	}
+	function isExcel() {
+		//set "Excel" value to hidden box
+		form.source.value = "Excel";
+		validate();
+	}
+	function validate() {
+		alert("123");
+		//form validation logic
+		if (form.category.selectedIndex == '0') {
+			alert("456");
+			document.getElementById("categoryError").innerHTML = "<b>U must select category</b>";
+			return false;
+		} else {
+			form.submit();
+			
+		}
+
+	}
+</script>
+
+
+<h1 style="color: red; text-align: center">Searrh books</h1>
+
+<form name="form" method="post" action="controller">
+	<b>Select Book Category </b> : <select name="category">
+		<option value='' selected>--select-</option>
+		<option value='java'>JAVA</option>
+		<option value='.net'>.NET</option>
+		<option value='jscript'>JavaScript</option>
+	</select> <span style="color: red" id='categoryError'></span> <br> <br>
+
+	<input type="button" value="HtmlOutput" onclick="isHtml()"> <input
+		type="button" value="ExcelOutput" onclick="isExcel()"> <br>
+	<input type="hidden" name="source" />
+
+
+</form>

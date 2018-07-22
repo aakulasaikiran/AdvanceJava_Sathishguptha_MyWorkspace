@@ -1,0 +1,12 @@
+
+<h1 style="color:red;text-align:center"> Html to servlet communication using forms </h1>
+<script lanaguage="JavaScript" src="validation.js">
+       
+ </script>
+
+<form action="voterurl"  method="PUT"  onsubmit="return validate(this)">
+    Person name::: <input type="text" name="pname" placeholder="enter name" ><span id="nameErr" style="color:red"></span><br>
+	Person age ::: <input type="text" name="page" placeholder="enter correct age" /><span id="ageErr" style="color:red" ></span><br>
+	<input type="hidden"  name="vflag"  value="no"/>
+	<input type="submit"  value="Check Voting elgibility">
+</form>

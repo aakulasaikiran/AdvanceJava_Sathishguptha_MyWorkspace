@@ -1,0 +1,8 @@
+SQL> desc select_books;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BOOKID                                    NOT NULL VARCHAR2(15)
+ BOOKNAME                                           VARCHAR2(20)
+ AUTHORNAME                                         VARCHAR2(15)
+ STATUS                                             VARCHAR2(10)
+ CATEGORY                                           VARCHAR2(10)
